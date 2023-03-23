@@ -14,6 +14,9 @@
 		321CCEFA29C8B35100A95175 /* Tipsy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 321CCEF829C8B35100A95175 /* Tipsy.xcdatamodeld */; };
 		321CCEFC29C8B35300A95175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 321CCEFB29C8B35300A95175 /* Assets.xcassets */; };
 		321CCEFF29C8B35300A95175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321CCEFD29C8B35300A95175 /* LaunchScreen.storyboard */; };
+		321CCF0A29CAFC3C00A95175 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321CCF0929CAFC3C00A95175 /* ResultViewController.swift */; };
+		321CCF0C29CB7C0E00A95175 /* Tipsy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321CCF0B29CB7C0E00A95175 /* Tipsy.swift */; };
+		321CCF0E29CB7C3100A95175 /* CalculatorTipsy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321CCF0D29CB7C3100A95175 /* CalculatorTipsy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		321CCEFB29C8B35300A95175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		321CCEFE29C8B35300A95175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		321CCF0029C8B35300A95175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		321CCF0929CAFC3C00A95175 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		321CCF0B29CB7C0E00A95175 /* Tipsy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tipsy.swift; sourceTree = "<group>"; };
+		321CCF0D29CB7C3100A95175 /* CalculatorTipsy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTipsy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +66,41 @@
 			children = (
 				321CCEEF29C8B35100A95175 /* AppDelegate.swift */,
 				321CCEF129C8B35100A95175 /* SceneDelegate.swift */,
-				321CCEF329C8B35100A95175 /* ViewController.swift */,
-				321CCEF529C8B35100A95175 /* Main.storyboard */,
+				321CCF0629C8B4B300A95175 /* Model */,
+				321CCF0829C8B4D000A95175 /* View */,
+				321CCF0729C8B4C300A95175 /* Controller */,
 				321CCEFB29C8B35300A95175 /* Assets.xcassets */,
 				321CCEFD29C8B35300A95175 /* LaunchScreen.storyboard */,
 				321CCF0029C8B35300A95175 /* Info.plist */,
 				321CCEF829C8B35100A95175 /* Tipsy.xcdatamodeld */,
 			);
 			path = Tipsy;
+			sourceTree = "<group>";
+		};
+		321CCF0629C8B4B300A95175 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				321CCF0B29CB7C0E00A95175 /* Tipsy.swift */,
+				321CCF0D29CB7C3100A95175 /* CalculatorTipsy.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		321CCF0729C8B4C300A95175 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				321CCEF329C8B35100A95175 /* ViewController.swift */,
+				321CCF0929CAFC3C00A95175 /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		321CCF0829C8B4D000A95175 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				321CCEF529C8B35100A95175 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321CCF0A29CAFC3C00A95175 /* ResultViewController.swift in Sources */,
 				321CCEF429C8B35100A95175 /* ViewController.swift in Sources */,
 				321CCEF029C8B35100A95175 /* AppDelegate.swift in Sources */,
 				321CCEF229C8B35100A95175 /* SceneDelegate.swift in Sources */,
+				321CCF0E29CB7C3100A95175 /* CalculatorTipsy.swift in Sources */,
 				321CCEFA29C8B35100A95175 /* Tipsy.xcdatamodeld in Sources */,
+				321CCF0C29CB7C0E00A95175 /* Tipsy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
